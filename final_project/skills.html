@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Skills</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul><li><a href="about.html">About</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="experiences.html">Experiences</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="interests.html">Interests</a></li>
+        <li><a href="award.html">Award</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="skills">
+    <div class="prompt">dimas@skills:~$</div>
+
+<div class="ascii-art">
+  _  __          _     _ _             
+ | |/ /         | |   | (_)            
+ | ' / ___  __ _| |__ | |_  __ _ _ __  
+ |  < / _ \/ _` | '_ \| | |/ _` | '_ \ 
+ | . \  __/ (_| | | | | | | (_| | | | |
+ |_|\_\___|\__,_|_| |_|_|_|\__,_|_| |_|
+                                       
+                                    
+</div>
+      <p>Berikut adalah kemampuan saya sebagai seorang web developer:<br>
+
+<br>1. Pemrograman Web:<br>
+   <br>- HTML: Menguasai markup language HTML dan pemahaman tentang struktur dan semantik elemen-elemen HTML.<br>
+   <br>- CSS: Memiliki keahlian dalam menggunakan CSS untuk mengatur tata letak, gaya, dan responsifitas pada halaman web.<br>
+   <br>- JavaScript: Mampu mengembangkan skrip JavaScript untuk membuat interaksi dan fungsionalitas dinamis pada halaman web.<br>
+   <br>- Framework: Pengalaman dalam menggunakan kerangka kerja web seperti React, Angular, atau Vue.js untuk pengembangan aplikasi web yang lebih kompleks.<br>
+
+<br>2. Pengembangan Front-End:<br>
+   <br>- Responsive Web Design: Memiliki pemahaman tentang desain responsif untuk memastikan tampilan yang optimal pada berbagai perangkat dan ukuran layar.<br>
+   <br>- UI/UX Design:<br>
+<br>Mampu mengaplikasikan prinsip-prinsip desain antarmuka pengguna (UI) dan pengalaman pengguna (UX) untuk meningkatkan kegunaan dan daya tarik visual suatu situs web.<br>
+   <br>- Kecepatan dan Optimisasi:<br>
+<br>Memahami teknik-teknik pengoptimalan performa dan kecepatan loading halaman web seperti penggunaan cache, kompresi gambar, dan pengurangan permintaan HTTP.<br>
+
+<br>3. Basis Data:<br>
+   <br>- SQL: Memiliki pengetahuan dan pengalaman dalam menggunakan SQL (Structured Query Language) untuk mengelola dan memanipulasi data dalam basis data.<br>
+   <br>- Database Management Systems (DBMS): Familiar dengan sistem manajemen basis data seperti MySQL, PostgreSQL, atau MongoDB.<br>
+
+<br>4. Pengetahuan Umum:<br>
+   <br>- Version Control: Menggunakan sistem kontrol versi seperti Git untuk mengelola kode sumber dan kolaborasi dengan tim.<br>
+   <br>- Keamanan Web: Memahami prinsip keamanan web seperti proteksi terhadap serangan cross-site scripting (XSS), serangan injeksi SQL, dan tindakan perlindungan data.<br>
+
+<br>5. Keterampilan Lainnya:<br>
+   <br>- Problem Solving: Kemampuan dalam menganalisis masalah, mencari solusi, dan menerapkan pemecahan masalah dalam pengembangan web.<br>
+   <br>- Komunikasi dan Kolaborasi: <br>
+<br>Mampu berkomunikasi efektif dengan anggota tim dan berkolaborasi dalam proyek pengembangan web.<br>
+</p>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+<script>
+    // Menampilkan pesan palsu saat Developer Tools dibuka
+    console.log("%cHalaman ini tidak dapat diinspeksi.", "font-size: 30px; color: red;");
+    
+    // Menonaktifkan akses ke fitur Developer Tools
+    document.onkeydown = function(e) {
+      if (event.keyCode == 123 || e.ctrlKey && e.shiftKey && e.keyCode == 73 || e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+        return false;
+      }
+    };
+    
+    // Mencegah klik kanan pada halaman
+    document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+    });
+  </script>
+
+<footer class="terminal-footer">
+  <div class="terminal-content">
+    <p>&copy; 2023 Portofolio Saya. All rights reserved.</p>
+    <p>Made with <span class="heart">&hearts;</span> by Dimas Alfa Pratama</p>
+</body>
+</html>

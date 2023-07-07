@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Error</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    body {
+      background-color: #000000;
+      color: #00FF00;
+      font-family: "Courier New", monospace;
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      color: #FF0000;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+    .terminal-input {
+      display: inline-block;
+    }
+    .prompt {
+      color: #00FF00;
+    }
+    .command {
+      color: #FFFFFF;
+    }
+    .error {
+      color: #FF0000;
+    }
+    .back-button {
+      margin-top: 20px;
+      background-color: #00FF00;
+      color: #000000;
+      font-family: "Courier New", monospace;
+      font-size: 18px;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+    .back-button:hover {
+      background-color: #00CC00;
+    }
+  </style>
+</head>
+<body>
+  <h1>Error</h1>
+  <p><span class="prompt">$</span> <span class="command">access denied</span></p>
+  <p class="error">Kata sandi yang Anda masukkan salah. Silakan coba lagi.</p>
+  <button class="back-button" onclick="goBack()">&lt;&lt; Kembali</button>
+
+  <script>
+    function goBack() {
+      window.location.href = "index.html";
+    }
+  </script>
+
+<footer class="terminal-footer">
+  <div class="terminal-content">
+    <p>&copy; 2023 Portofolio Saya. All rights reserved.</p>
+    <p>Made with <span class="heart">&hearts;</span> by Dimas Alfa Pratama</p>
+</body>
+</html>

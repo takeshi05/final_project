@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Landing Page</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="experiences.html">Experiences</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="interests.html">Interests</a></li>
+        <li><a href="award.html">Award</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<div class="ascii-art">
+   _____      _                       _     _____        _                      
+  / ____|    | |                     | |   |  __ \      | |                     
+ | (___   ___| | __ _ _ __ ___   __ _| |_  | |  | | __ _| |_ __ _ _ __   __ _   
+  \___ \ / _ \ |/ _` | '_ ` _ \ / _` | __| | |  | |/ _` | __/ _` | '_ \ / _` |  
+  ____) |  __/ | (_| | | | | | | (_| | |_  | |__| | (_| | || (_| | | | | (_| |  
+ |_____/_\___|_|\__,_|_| |_|_|_|\__,_|\__| |_____/ \__,_|\__\__,_|_| |_|\__, |  
+     | (_) |  __ \         | |       / _|    | (_)                       __/ |  
+   __| |_  | |__) |__  _ __| |_ ___ | |_ ___ | |_  ___    ___  __ _ _   |___/ _ 
+  / _` | | |  ___/ _ \| '__| __/ _ \|  _/ _ \| | |/ _ \  / __|/ _` | | | |/ _` |
+ | (_| | | | |  | (_) | |  | || (_) | || (_) | | | (_) | \__ \ (_| | |_| | (_| |
+  \__,_|_| |_|   \___/|_|   \__\___/|_| \___/|_|_|\___/  |___/\__,_|\__, |\__,_|
+                                                                     __/ |      
+                                                                    |___/       
+
+</div>
+<h2> $$TERMINAL EMULATOR$$ </h2>
+
+  <div class="terminal">
+    <div class="terminal-body">
+      <div id="terminal-output"></div>
+      <div class="terminal-input">
+        <span>$</span>
+        <input type="text" placeholder=" Ketik help untuk melihat perintah" id="terminal-input" autofocus>
+        <button type="submit" id="submitBtn">Submit</button>
+      </div>
+    </div>
+  </div>
+
+<p id="ip-address">~$Alamat IP address anda adalah: </p>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', function() {
+      var ipAddressElement = document.getElementById('ip-address');
+
+      fetch('https://api.ipify.org/?format=json')
+        .then(function(response) {
+          return response.json();
+        })
+        .then(function(data) {
+          var ipAddress = data.ip;
+          ipAddressElement.textContent += ipAddress;
+        })
+        .catch(function(error) {
+          console.log('Error:', error);
+          ipAddressElement.textContent += 'Gagal memperoleh alamat IP.';
+        });
+    });
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+
+ <script>
+    window.onload = function() {
+      var password = prompt("Masukan kata sandi: dimasganteng");
+      if (password !== null) {
+        if (password === "dimasganteng") {
+          alert("Kata sandi benar. Anda diizinkan mengakses halaman ini.");
+          // Lanjutkan memuat halaman
+        } else {
+          alert("Kata sandi salah. Passwordnya dimasganteng.");
+          window.location.href = "halaman-error.html";
+        }
+      } else {
+        alert("Anda harus memasukkan kata sandi untuk mengakses halaman ini.");
+        window.location.href = "halaman-error.html";
+      }
+    };
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      document.addEventListener('copy', function(event) {
+        event.preventDefault();
+        alert('jangan di copy bos.');
+      });
+    });
+  </script>
+
+<script>
+
+    // Menampilkan pesan palsu saat Developer Tools dibuka
+    console.log("%cHalaman ini tidak dapat diinspeksi.", "font-size: 30px; color: red;");
+    
+    // Menonaktifkan akses ke fitur Developer Tools
+    document.onkeydown = function(e) {
+      if (event.keyCode == 123 || e.ctrlKey && e.shiftKey && e.keyCode == 73 || e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+        return false;
+      }
+    };
+    
+    // Mencegah klik kanan pada halaman
+    document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+    });
+  </script>
+
+<footer class="terminal-footer">
+  <div class="terminal-content">
+    <p>&copy; 2023 Portofolio Saya. All rights reserved.</p>
+    <p>Made with <span class="heart">&hearts;</span> by Dimas Alfa Pratama</p>
+  </div>
+</footer>
+</body>
+</html>

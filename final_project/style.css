@@ -1,0 +1,152 @@
+body {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  background-color: black;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #222;
+  padding: 10px;
+
+}
+
+.about {
+  overflow: auto; /* Mengatasi float */
+}
+
+.about img {
+  float: left; /* Menggeser foto ke sebelah kiri */
+  margin-right: 20px; /* Jarak antara foto dan teks */
+  border: 4px solid green;
+  max-width: 200px;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.ascii-art {
+    font-family: monospace;
+    white-space: pre;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #00ff00;
+  text-decoration: none;
+}
+
+.terminal {
+  width: 950px;
+  margin: auto;
+  background-color: #000;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+  border: 3px solid green;
+}
+
+.terminal-body {
+  padding: 20px;
+  height: 800px;
+  overflow-y: auto;
+}
+
+.terminal-input {
+  margin-top: 20px;
+}
+
+.terminal-input span {
+  color: #00ff00;
+}
+
+.terminal-input input {
+  width: 85%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.terminal-input button {
+  background-color: #00ff00;
+  color: #000;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.command {
+  color: #00ff00;
+}
+
+/* CSS Styles for Footer */
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  30% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  70% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
+
+.terminal-footer {
+  background-color:;
+  color: #00FF00;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.terminal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #00FF00;
+  animation: blink 3s infinite;
+  color: #FFFFFF;
+  animation: slide-in 3s ease-in-out infinite;
+}
+
+.heart {
+  color: #FF0000;
+  font-size: 16px;
+  animation: blink 0.5s infinite alternate;
+}

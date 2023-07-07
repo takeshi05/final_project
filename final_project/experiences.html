@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Experiences</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul><li><a href="about.html">About</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="experiences.html">Experiences</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="interests.html">Interests</a></li>
+        <li><a href="award.html">Award</a></li>
+      </ul>
+    </nav>
+  </header>
+<div class="experiences">
+    <div class="prompt">dimas@experiences:~$</div>
+<div class="ascii-art">
+  _____                       _                             
+ |  __ \                     | |                            
+ | |__) |__ _ __   __ _  __ _| | __ _ _ __ ___   __ _ _ __  
+ |  ___/ _ \ '_ \ / _` |/ _` | |/ _` | '_ ` _ \ / _` | '_ \ 
+ | |  |  __/ | | | (_| | (_| | | (_| | | | | | | (_| | | | |
+ |_|   \___|_| |_|\__, |\__,_|_|\__,_|_| |_| |_|\__,_|_| |_|
+                   __/ |                                    
+                  |___/                                     
+
+</div>
+      <p>Sebagai seorang web developer, saya memiliki pengalaman yang beragam dalam pengembangan web. Berikut ini adalah beberapa contoh pengalaman kerja yang relevan:</p>
+
+<p>	<br>1.	Front-end Developer di Bank BCA )2019-2021)<br>
+	<p>Membangun dan memelihara tampilan antarmuka pengguna (UI) untuk situs web perusahaan.</p>
+	<p>Mengimplementasikan desain responsif dan memastikan keterjangkauan serta aksesibilitas yang baik.</p>
+	<p>Menggunakan HTML, CSS, dan JavaScript untuk mengembangkan fitur-fitur interaktif.</p>
+	<p>Berkolaborasi dengan tim desain untuk mengoptimalkan pengalaman pengguna (UX).</p>
+	<br>2.	Web Developer Freelance  Microsoft (2017-2019)<br>
+	<p>Mengerjakan proyek web mandiri untuk berbagai klien dari berbagai industri.</p>
+	<p>Merancang dan mengembangkan situs web responsif sesuai dengan kebutuhan klien.</p>
+	<p>Menggunakan teknologi dan alat bantu seperti Bootstrap, jQuery, dan WordPress.</p>
+	<p>Menyesuaikan situs web dengan persyaratan SEO untuk meningkatkan visibilitas di mesin pencari.</p>
+	<br>3.	Praktikum Pengembangan Web di Binary Agency (2016)<br>
+	<p>Terlibat dalam pengembangan proyek-proyek web dengan menggunakan teknologi HTML, CSS, dan JavaScript.</p>
+	<p>Mempelajari praktik-praktik terbaik dalam pengembangan web dan memperoleh pemahaman tentang siklus pengembangan perangkat lunak.</p>
+	<p>Mengerjakan tugas-tugas pengujian dan debugging untuk memastikan kualitas dan keandalan aplikasi web.</p>
+	<p> Selain pengalaman kerja, saya juga aktif dalam mengikuti pelatihan dan konferensi terkait web development untuk terus memperluas pengetahuan dan keterampilan saya.
+	<p>Saya percaya bahwa pengalaman saya dalam mengembangkan berbagai jenis proyek web memberikan fondasi yang kuat untuk menghadapi tantangan dan menyelesaikan masalah dalam industri pengembangan web.</p>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+ <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      document.addEventListener('copy', function(event) {
+        event.preventDefault();
+        alert('Penyalinan konten tidak diizinkan oleh Dimas.');
+      });
+    });
+  </script>
+<script>
+
+    // Menampilkan pesan palsu saat Developer Tools dibuka
+    console.log("%cHalaman ini tidak dapat diinspeksi.", "font-size: 30px; color: red;");
+    
+    // Menonaktifkan akses ke fitur Developer Tools
+    document.onkeydown = function(e) {
+      if (event.keyCode == 123 || e.ctrlKey && e.shiftKey && e.keyCode == 73 || e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+        return false;
+      }
+    };
+    
+    // Mencegah klik kanan pada halaman
+    document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+    });
+  </script>
+
+<footer class="terminal-footer">
+  <div class="terminal-content">
+    <p>&copy; 2023 Portofolio Saya. All rights reserved.</p>
+    <p>Made with <span class="heart">&hearts;</span> by Dimas Alfa Pratama</p>
+</body>
+</html>

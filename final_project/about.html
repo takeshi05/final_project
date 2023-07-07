@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tentang Saya</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul><li><a href="about.html">About</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="experiences.html">Experiences</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="interests.html">Interests</a></li>
+        <li><a href="award.html">Award</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="about">
+    <div class="prompt">dimas@about:~$</div>
+<div class="ascii-art">
+  _______         _                       _____                   
+ |__   __|       | |                     / ____|                  
+    | | ___ _ __ | |_ __ _ _ __   __ _  | (___   __ _ _   _  __ _ 
+    | |/ _ \ '_ \| __/ _` | '_ \ / _` |  \___ \ / _` | | | |/ _` |
+    | |  __/ | | | || (_| | | | | (_| |  ____) | (_| | |_| | (_| |
+    |_|\___|_| |_|\__\__,_|_| |_|\__, | |_____/ \__,_|\__, |\__,_|
+                                  __/ |                __/ |      
+                                 |___/                |___/       
+
+</div>
+<img src="logo.jpg" alt="Bukan Foto Saya">
+    <p>Sebagai seorang web developer, saya memiliki keahlian dalam mengembangkan dan merancang aplikasi web. Saya memiliki pengetahuan yang kuat dalam HTML, CSS, dan JavaScript, serta berbagai kerangka kerja dan alat bantu terkait web seperti Bootstrap, jQuery, dan React.</p>
+<p>Saya memiliki pengalaman dalam membangun situs web responsif yang menarik dan fungsional. Saya juga memiliki pemahaman yang baik tentang desain antarmuka pengguna (UI) dan pengalaman pengguna (UX), yang membantu saya menciptakan pengalaman web yang menyenangkan dan intuitif bagi pengguna.</p>
+<p>Saya senang bekerja dalam tim dan dapat berkolaborasi dengan desainer dan pengembang lainnya untuk menciptakan solusi web yang inovatif dan efektif. Saya juga memiliki keterampilan pemecahan masalah yang baik, kemampuan untuk menguji dan debug aplikasi web, serta kemauan untuk terus belajar dan mengikuti perkembangan teknologi web terbaru.</p>
+<p>Saya berkomitmen untuk menghasilkan kode yang bersih, efisien, dan dapat dipelihara. Saya juga memiliki kemampuan komunikasi yang baik, sehingga saya dapat berinteraksi dengan baik dengan klien dan tim proyek untuk memahami kebutuhan mereka dan memberikan solusi yang sesuai.</p>
+<p>Dalam karier saya sebagai web developer, saya telah terlibat dalam berbagai proyek pengembangan web yang sukses, termasuk situs web perusahaan, toko online, blog, dan aplikasi web khusus. Saya terus mencari peluang untuk mengasah keterampilan saya dan menghadapi tantangan baru dalam industri web.</p>
+  <script src="script.js"></script>
+
+ <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      document.addEventListener('copy', function(event) {
+        event.preventDefault();
+        alert('Penyalinan konten tidak diizinkan oleh Dimas.');
+      });
+    });
+  </script>
+
+<script>
+
+    // Menampilkan pesan palsu saat Developer Tools dibuka
+    console.log("%cHalaman ini tidak dapat diinspeksi.", "font-size: 30px; color: red;");
+    
+    // Menonaktifkan akses ke fitur Developer Tools
+    document.onkeydown = function(e) {
+      if (event.keyCode == 123 || e.ctrlKey && e.shiftKey && e.keyCode == 73 || e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+        return false;
+      }
+    };
+    
+    // Mencegah klik kanan pada halaman
+    document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+    });
+  </script>
+
+<footer class="terminal-footer">
+  <div class="terminal-content">
+    <p>&copy; 2023 Portofolio Saya. All rights reserved.</p>
+    <p>Made with <span class="heart">&hearts;</span> by Dimas Alfa Pratama</p>
+</body>
+</html>
